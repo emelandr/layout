@@ -1,0 +1,427 @@
+@media (max-width: 1599.98px) {
+	
+	.page__flying-block-2 {
+		top: 6%;
+		left: 29%;
+	}
+
+	.page__flying-block-4 {
+		top: 85%;
+		left: 30%;
+	}
+
+	.page__flying-block-5 {
+		top: 26%;
+		left: 45%;
+	}
+
+	.name__title {
+		font-size: 55px;
+	}
+
+	.page__canvas {
+		right: -11%;
+	}
+}
+
+@media (max-width: 1199.98px) {
+
+	.wrap {
+		width: 92.29%;
+	}
+
+	.menu__button,
+	.menu__close {
+		width: 50px;
+		height: 50px;
+	}
+
+	.menu__button {
+		display: block;
+		font-size: 44px;
+	}
+
+	.menu__close {
+		font-size: 40px;
+	}
+
+	.header__menu-list {
+		display: none;
+	}
+
+	.page__flying-block-1 {
+		top: 5%;
+		left: 10%;
+	}
+
+	.page__flying-block-2 {
+		top: 10%;
+		left: 87%;
+	}
+
+	.page__flying-block-3 {
+		top: 87%;
+		left: 6%;
+	}
+
+	.page__flying-block-4 {
+		top: 20%;
+		left: 37%;
+	}
+
+	.page__flying-block-5 {
+		top: 82%;
+		left: 29%;
+	}
+
+	.section__photo {
+		margin-right: 0;
+	}
+
+	.photo {
+		max-width: 45%;
+	}
+
+	.page__canvas {
+		right: -20%;
+	}
+
+	.canvas {
+		width: 77%;
+		height: 77%;
+	}
+
+	.skills__block {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+	}
+
+	.skills-item {
+		width: 34%;
+	}
+
+	.slick-dots {
+		margin: -20px;
+	}
+
+	.examples__btn-details {
+		margin-top: 70px;
+	}
+
+	.examples__arrow-left,
+	.examples__arrow-right {
+		display: none;
+	}
+
+	.price-block__title {
+		width: 100%;
+	}
+
+	.price-block__text {
+		width: 83%;
+		margin-left: 0;
+	}
+
+	.price-block__flying-block-1 {
+		top: 3%;
+		left: 17%;
+		font-size: 32px;
+	}
+
+	.price-block__flying-block-2,
+	.price-block__flying-block-3 {
+		display: none;
+	}
+	.price-block__flying-block-4 {
+		top: 82%;
+		left: 50%;
+		font-size: 25px;
+	}
+
+	.price-block__flying-block-5 {
+		top: 80%;
+		left: 84%;
+	}
+}
+
+@media (max-width: 991.98px) {
+
+	.page-mobile {
+		display: block;
+	}
+
+	.wrap {
+		width: 92.29%;
+	}
+
+	.header__phone {
+		margin: 0;
+	}
+
+	.header__btn-order {
+		display: none;
+	}
+
+	.header__btn-order-mobile {
+		display: block;
+	}
+
+	.name-desktop {
+		display: none;
+	}
+
+	.section__photo {
+		margin-left: auto;
+	}
+
+	.photo {
+		max-width: 70%;
+	}
+
+	.page__canvas {
+		right: 0;
+	}
+
+	.canvas {
+		height: 75%;
+		width: auto;
+	}
+
+	.section__name {
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
+	}
+
+	.name {
+		text-align: center;
+	}
+
+	.name__title,
+	.skills__title,
+	.examples__title {
+		font-size: 35px;
+	}
+
+	.name__title {
+		margin: 20px 0 15px;
+	}
+
+	.name__text,
+	.skills-item__text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.name__text {
+		margin: 0 0 30px;
+	}
+
+	.btn-details {
+		width: 50%;
+	}
+
+	.page__flying-block-2 {
+		display: none;
+	}
+
+	.page__flying-block-3 {
+		top: 59%;
+		left: 5%;
+	}
+
+	.page__flying-block-4 {
+		top: 10%;
+		left: 87%;
+	}
+
+	.page__flying-block-5 {
+		top: 24%;
+		left: 35%;
+	}
+
+	.examples-item__text {
+		text-align: center;
+	}
+
+	.price-block__flying-block-4 {
+		display: none;
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	.wrap {
+		width: 87.5%;
+	}
+
+	.btn-details {
+		width: 100%;
+	}
+
+	.skills-item {
+    	width: 42%;
+	}
+
+	.page__flying-block-1 {
+		top: -2%;
+		left: 18%;
+	}
+
+	.flying-block-1 {
+		font-size: 37px;
+	}
+
+	.page__flying-block-3 {
+		top: 30%;
+		left: 11%;
+	}
+
+	.flying-block-3 {
+		font-size: 40px;
+	}
+
+	.page__flying-block-4 {
+		top: 13%;
+		left: 81%;
+	}
+
+	.flying-block-4 {
+		font-size: 26px;
+	}
+
+	.page__flying-block-5 {
+		top: 0;
+		left: 50%;
+	}
+
+	.flying-block-5 {
+		font-size: 28px;
+	}
+
+	.canvas {
+		width: 110%;
+		height: 75%;
+	}
+
+	.price-block__title {
+		font-size: 28px;
+	}
+
+	.price-block__text {
+		width: 100%;
+		font-size: 15px;
+	}
+
+	.price-block__flying-block-1,
+	.price-block__flying-block-5 {
+		display: none;
+	}
+
+	.page__footer {
+		margin: 20px 0;
+	}
+
+	.footer {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+	.footer__menu-list {
+		margin-bottom: 50px;
+	}
+
+	.contact__tel,
+	.contact__email {
+		margin-bottom: 25px;
+    	font-size: 20px;
+	}
+
+	.right-block {
+		width: 100%;
+	}
+
+	.right-block__btn-order {
+		display: none;
+	}
+
+	.right-block__btn-details {
+		display: block;
+	}
+
+	.right-block__btn-details {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	
+
+	.menu__button,
+	.menu__close {
+		font-size: 25px;
+	}
+
+	.section__name {
+		margin-top: -30px;
+	}
+
+	.btn-order-mobile {
+		width: 28px;
+		height: 28px;
+		font-size: 14px;
+	}
+
+	.phone {
+		font-size: 18px;
+	}
+
+	.flying-block-1 {
+		font-size: 25px;
+	}
+
+	.flying-block-3 {
+		font-size: 29px;
+	}
+
+	.flying-block-4 {
+		font-size: 15px;
+	}
+
+	.flying-block-5 {
+		font-size: 18px;
+	}
+
+	.name__title,
+	.skills__title,
+	.examples__title {
+		font-size: 29px;
+	}
+
+	.page__skills,
+	.page__examples {
+		margin: 20px 0;
+	}
+
+	.skills__skills-item {
+		margin: 25px 0;
+	}
+
+	.skills-item {
+		width: 93%;
+	}
+
+	.skills__title {
+		margin-bottom: 25px;
+	}
+
+	.skills-item__text {
+		text-align: center;
+	}
+
+	.skills__btn-details {
+		margin-top: 25px;
+	}
+}

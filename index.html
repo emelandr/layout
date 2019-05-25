@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">	
+</head>
+<body onload="draw();">
+	
+	<div class="modal fade" id="backCall" tabindex="-1" role="dialog" aria-labelledby="backCall" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="backCallLabel">Обратный звонок</h4>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="inputName">Ваше имя</label>
+							<input type="text" class="form-control" id="inputName" placeholder="Имя" required>
+						</div>
+						<div class="form-group">
+							<label for="inputPhone">Ваш номер телефона</label>
+							<input type="tel" class="form-control" id="inputPhone" placeholder="+7 (***) *** ** **" required>
+						</div>
+						<button class="btn btn-danger btn-details_orange" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="moreInfo" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="moreInfoLabel">Обратная связь</h4>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="inputYourName">Ваше имя</label>
+							<input type="text" class="form-control" id="inputYourName" placeholder="Имя" required>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail">Ваш email</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="email" required>
+						</div>
+						<button class="btn btn-danger btn-details_orange" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="page page_grey">
+		<div class="wrap">
+			<header class="header">
+				<nav class="menu">
+					<button class="menu__button menu__button_pink"><i class="icon-menu"></i></button>
+					<button class="menu__close menu__close_pink"><i class="icon-cancel"></i></button>
+					<ul class="header__menu-list menu-list">
+						<li class="menu-list__item"><a class="menu-list__link menu-list__link_black" href="#services">Услуги</a></li>
+						<li class="menu-list__item"><a class="menu-list__link menu-list__link_black" href="#portfolio">Портфолио</a></li>
+						<li class="menu-list__item"><a class="menu-list__link menu-list__link_black" href="#cost">Стоимость</a></li>
+					</ul>
+				</nav>
+				<p class="header__phone phone phone_bold">+7 (928) 119-98-68</p>
+				<button class="header__btn-order btn-order" data-toggle="modal" data-target="#backCall">Заказать звонок</button>
+				<button class="header__btn-order-mobile btn-order-mobile" data-toggle="modal" data-target="#backCall"><i class="icon-phone"></i></button>
+			</header>
+		</div>
+	</div>
+	<main>
+		<div class="page page_grey">
+			<span class="page__flying-block-1 flying-block-1 flying-block-1_pink">{ }</span>
+			<span class="page__flying-block-2 flying-block-2 flying-block-2_pink">&lt;div&gt;</span>
+			<span class="page__flying-block-3 flying-block-3 flying-block-3_pink">#</span>
+			<span class="page__flying-block-4 flying-block-4 flying-block-4_pink">&lt;div&gt;</span>
+			<span class="page__flying-block-5 flying-block-5 flying-block-5_pink">&lt;/&gt;</span>
+			<div class="wrap">
+				<section class="wrap__section section">
+					<div class="section__name name name-desktop">
+						<h1 class="name__title">Андрей Емельянов</h1>
+						<p class="name__text name__text_grey">Frontend-разработчик и&nbsp;веб-верстальщик</p>
+						<button class="btn-details btn-details_orange" data-toggle="modal" data-target="#moreInfo">Узнать больше</button>
+					</div>
+					<img class="section__photo photo" src="img/photo.png" alt="человек">
+				</section>
+			</div>
+			<canvas class="page__canvas canvas" id="ellipse" width="828" height="635"></canvas>
+		</div>
+		<div class="page page-mobile">
+			<div class="wrap">
+				<section class="wrap__section section">
+					<div class="section__name name">
+						<h1 class="name__title">Андрей Емельянов</h1>
+						<p class="name__text name__text_grey">Frontend-разработчик и&nbsp;веб-верстальщик</p>
+						<button class="name__btn-details btn-details btn-details_orange" data-toggle="modal" data-target="#moreInfo">Узнать больше</button>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="page">
+			<div class="wrap">
+				<section class="skills page__skills">
+					<h2 class="skills__title"><a id="services"></a>Что я делаю</h2>
+					<div class="skills__block">
+						<div class="skills-item skills__skills-item">
+							<img src="img/coding.png" alt="coding">
+							<p class="skills-item__text skills-item__text_grey">Верстка лендинг-страниц и&nbsp;сайтов любой сложности</p>
+						</div>
+						<div class="skills-item skills__skills-item">
+							<img src="img/responsive.png" alt="responsive">
+							<p class="skills-item__text skills-item__text_grey">Адаптивная верстка под все браузеры и&nbsp;устройства</p>
+						</div>
+						<div class="skills-item skills__skills-item">
+							<img src="img/programming.png" alt="programming">
+							<p class="skills-item__text skills-item__text_grey">Frontend-разработка и&nbsp;программирование</p>
+						</div>
+						<div class="skills-item skills__skills-item">
+							<img src="img/tools-and-utensils.png" alt="tools-and-utensils">
+							<p class="skills-item__text skills-item__text_grey">Исправление и&nbsp;доработка существующей верстки</p>
+						</div>
+					</div>
+					<button class="btn-details skills__btn-details btn-details_orange" data-toggle="modal" data-target="#moreInfo">Узнать стоимость</button>
+				</section>
+			</div>
+		</div>
+		<div class="page page_grey">
+			<div class="wrap">
+				<section class="examples page__examples">
+					<h2 class="examples__title"><a id="portfolio"></a>Примеры моих работ</h2>
+					<button class="arrow-left examples__arrow-left">
+						<img src="img/arrow.png" alt="стрелка">
+					</button>
+					<button class="arrow-right examples__arrow-right">
+						<img src="img/arrow.png" alt="стрелка">
+					</button>
+					<div class="examples__block">
+						<div class="examples-item examples__examples-item">
+							<img class="examples-item__img" src="img/psy-site.jpg" alt="psy-site">
+							<p class="examples-item__text examples-item__text_grey">Сайт психолога Веры Антоновой</p>
+						</div>
+						<div class="examples-item examples__examples-item">
+							<img class="examples-item__img" src="img/children-site.jpg" alt="children-site">
+							<p class="examples-item__text examples-item__text_grey">Сайт магазина детской одежды</p>
+						</div>
+						<div class="examples-item examples__examples-item">
+							<img class="examples-item__img" src="img/fish-site.jpg" alt="fish-site">
+							<p class="examples-item__text examples-item__text_grey">Сайт магазина &laquo;Рыболов&raquo;</p>
+						</div>
+					</div>
+					<button class="btn-details examples__btn-details btn-details_orange" data-toggle="modal" data-target="#moreInfo">Заказать проект</button>
+				</section>
+			</div>
+		</div>
+		<div class="page">
+			<section class="price-block">
+				<div class="wrap">
+					<h2 class="price-block__title"><a id="cost"></a>
+						Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+					</h2>
+					<p class="price-block__text">
+						* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+					</p>
+
+					<span class="price-block__flying-block-1 flying-block-1 flying-block-1_white">{ }</span>
+					<span class="price-block__flying-block-2 flying-block-2 flying-block-2_white">{ }</span>
+					<span class="price-block__flying-block-3 flying-block-3 flying-block-3_white">#</span>
+					<span class="price-block__flying-block-4 flying-block-4 flying-block-4_white">&lt;div&gt;</span>
+					<span class="price-block__flying-block-5 flying-block-5 flying-block-5_white">&lt;/&gt;</span>
+
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="page">
+			<div class="wrap">
+				<div class="footer page__footer">
+					<nav class="menu">
+						<ul class="menu-list footer__menu-list">
+							<li class="menu-list__item menu-list__item_size"><a class="menu-list__link menu-list__link_grey" href="#services">Услуги</a></li>
+							<li class="menu-list__item menu-list__item_size"><a class="menu-list__link menu-list__link_grey" href="#portfolio">Портфолио</a></li>
+							<li class="menu-list__item menu-list__item_size"><a class="menu-list__link menu-list__link_grey" href="#cost">Стоимость</a></li>
+						</ul>
+					</nav>
+					<div class="contact">
+						<p class="contact__tel"><i class="icon-fonts icon-phone"></i>+7 (928) 119-98-68</p>
+						<p class="contact__email"><i class="icon-fonts icon-mail-alt"></i>emelandr61@yandex.ru</p>
+					</div>
+					<div class="right-block">
+						<button class="right-block__btn-order btn-order" data-toggle="modal" data-target="#backCall">Заказать звонок</button>
+						<button class="right-block__btn-details btn-details btn-details_orange" data-toggle="modal" data-target="#backCall">Заказать звонок</button>
+						<div class="social-networks">
+							<a class="social-networks__link bg-vk" href="https://vk.com" target="_blank"></a><!--
+						 --><a class="social-networks__link bg-facebook" href="https://www.facebook.com" target="_blank"></a><!--
+						 --><a class="social-networks__link bg-twitter" href="https://twitter.com" target="_blank"></a><!--
+						 --><a class="social-networks__link bg-instagram" href="https://www.instagram.com" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page page_darkblue">
+			<div class="wrap">
+				<p class="footer-text">&copy; Андрей Емельянов, 2018-2019</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
