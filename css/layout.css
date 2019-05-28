@@ -23,6 +23,11 @@ button {
 	background-color: transparent;
 }
 
+button:focus {
+	outline: none;
+}
+
+
 ul {
 	list-style: none;
 }
@@ -157,10 +162,6 @@ main {
 	border-radius: 30px;
 }
 
-.btn-order-mobile:focus {
-	outline: none;
-}
-
 
 /*-------------- main -----------------*/
 
@@ -209,10 +210,6 @@ main {
 	height: 60px;
 	font-size: 18px;
 	color: #fff;
-}
-
-.btn-details:focus {
-	outline: none;
 }
 
 .btn-details_orange {
@@ -323,16 +320,16 @@ main {
 .examples__arrow-left,
 .examples__arrow-right {
 	position: absolute;
+	top: 40%;
 	z-index: 2;
 }
 
-.examples__arrow-left,
-.examples__arrow-right {
-	top: 43%;
+.examples__arrow-left {
+	left: -10px;
 }
 
 .examples__arrow-right {
-	right: 0;
+	right: -10px;
 }
 
 .arrow-left,
@@ -351,6 +348,14 @@ main {
 .examples__btn-details {
 	display: block;
 	margin: 0 auto;
+}
+
+.slick-dots li button:before {
+	font-size: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #ff4e2e;
 }
 
 .price-block {

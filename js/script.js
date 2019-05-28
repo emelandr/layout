@@ -74,7 +74,7 @@ $(window).on('resize', function() {
 	      	}
 	  	},
 	    {
-	      	breakpoint: 992,
+	      	breakpoint: 768,
 	      	settings: {
 	      		dots: true,
 	      		slidesToShow: 1,

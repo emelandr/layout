@@ -102,17 +102,21 @@
 		width: 34%;
 	}
 
-	.slick-dots {
-		margin: -20px;
-	}
-
 	.examples__btn-details {
-		margin-top: 70px;
+		margin-top: 236px;
 	}
 
 	.examples__arrow-left,
 	.examples__arrow-right {
 		display: none;
+	}
+
+	.slick-dots {
+		bottom: -116px;
+	}
+
+	.slick-dots li {
+		margin: 0 15px;
 	}
 
 	.price-block__title {
@@ -318,6 +322,22 @@
 	.price-block__flying-block-1,
 	.price-block__flying-block-5 {
 		display: none;
+	}
+
+	.slick-dots {
+		bottom: -66px;
+	}
+
+	.slick-dots li {
+		margin: 0 3px;
+	}
+
+	.slick-dots li button:before {
+		font-size: 10px;
+	}
+
+	.examples__btn-details {
+		margin-top: 136px;
 	}
 
 	.page__footer {
